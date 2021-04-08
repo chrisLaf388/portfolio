@@ -1,0 +1,70 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+}
+
+h2{
+    color: #1490d7;
+}
+/* animation - navbar */
+#navbarSupportedContent{
+    animation-name: mymoveright;
+    animation-duration: 3s;
+    position: relative; 
+
+}
+@keyframes mymoveright {
+    0% {right: -1000px;}
+    100% {right: 0px;}
+  }
+/* animation logo */
+.navbar-brand{
+    animation-name: mymove;
+    animation-duration: 2s;
+    position: relative; 
+}
+@keyframes mymove {
+  0% {left: -1000px;}
+  100% {left: 0px;}
+}
+/* animation - btn donwlad cv */
+#downloadcv{
+    animation-name: zoombutton;
+    animation-duration: 0.5s;
+    position: relative;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+@keyframes zoombutton {
+  0% {
+      transition: all 200ms ease-in;
+      transform: scale(1);
+  }
+  100% {
+      transition: all 200ms ease-in;
+      transform: scale(1.2);
+  }
+}
+
+nav a{
+    color: seashell !important;
+    font-size: 1.5rem;
+    
+}
+
+nav a:hover{
+    color:steelblue !important;
+}
+
+.perso_degrade{
+    background: linear-gradient(black, white);
+}
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+img{
+    width: 20em;
+}
